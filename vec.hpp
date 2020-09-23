@@ -27,23 +27,23 @@ namespace vec{
 
 	~Vector();
   	
-  	// Operator Overload
-  	Vector<T> operator + (const T &scalar) const; // vector / scalar
+  	// Operator Overload -  ensure operations in order of vector * scalar
+  	Vector<T> operator + (const T &scalar) const; /
   	Vector<T> operator + (const Vector<T> &vector) const;
   	
-  	Vector<T> operator - (const T &scalar) const; // vector / scalar
+  	Vector<T> operator - (const T &scalar) const; 
   	Vector<T> operator - (const Vector<T> &vector) const;
 
-  	Vector<T> operator * (const T &scalar) const; // vector * scalar
+  	Vector<T> operator * (const T &scalar) const; 
   	Vector<T> operator * (const Vector<T> &vector) const;
   	
-  	Vector<T> operator / (const T &scalar) const; // vector / scalar
+  	Vector<T> operator / (const T &scalar) const; 
   	Vector<T> operator / (const Vector<T> &vector) const;
   	
-  	Vector<T> operator += (const T &scalar) const; // vector / scalar
+  	Vector<T> operator += (const T &scalar) const; 
   	Vector<T> operator += (const Vector<T> &vector) const;
   	
-  	Vector<T> operator -= (const T &scalar) const; // vector / scalar
+  	Vector<T> operator -= (const T &scalar) const; 
   	Vector<T> operator -= (const Vector<T> &vector) const;
 
 	friend std::stream & operator << (std::stream &os, const Vector<T> &vector);
